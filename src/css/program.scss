@@ -1,0 +1,131 @@
+.program{
+  padding: 100px 0;
+  &__row{
+    display: flex;
+  }
+  &__card{
+    width: 25%;
+  }
+  &__subtitle{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23283B;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+    text-align: center;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: #E6514A;
+      left: 41%;
+      top: 8px;
+    }
+  }
+  &__title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #23283B;
+    margin-bottom: 52px;
+  }
+  &__top{
+    border: 1px solid #DEDEFF;
+    padding: 28px 20px;
+    width: 277px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    &_infos{
+      padding: 41px 10px;
+
+    }
+    &_info{
+      padding: 34px 10px;
+    }
+    &-title{
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #23283B;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-top: 16px;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 60px;
+    &_btn{
+      margin-bottom: 19px;
+    }
+    &_btns{
+      margin-bottom: 26px;
+    }
+  }
+  &__item{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #23283B;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+  &__button{
+    display: flex;
+    flex-direction: column;
+    &-btn{
+      width: 230px;
+      height: 52px;
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #E6514A;
+      border-radius: 30px;
+      border: none;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: .2s;
+      &:hover{
+        background-color: white;
+        color: #E6514A;
+        border: 1px solid #E6514A;
+        transition: .2s;
+      }
+    }
+    &-href{
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3035C4;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+  }
+}

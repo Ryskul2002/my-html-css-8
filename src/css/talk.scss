@@ -1,0 +1,66 @@
+.talk{
+  padding: 120px 0 197px;
+  background: url("../images/main/Rectangle 60.png") top right/40% 100% no-repeat;
+  &__row{
+    display: flex;
+  }
+  &__right{
+    padding-top: 120px;
+  }
+  &__subtitle{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3035C4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 28px;
+  }
+  &__title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 130%;
+    color: #23283B;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 52px;
+    &_block{
+      color: #E6514A;;
+    }
+  }
+  &__left{
+    max-width: 100%;
+  }
+  &__btn{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 10px;
+    background: #E6514A;
+    border-radius: 30px;
+    width: 375px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+      background-color: white;
+      color: #E6514A;
+      border: 1px solid #E6514A;
+      transition: .2s;
+    }
+  }
+}

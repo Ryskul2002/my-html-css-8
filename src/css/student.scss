@@ -1,0 +1,95 @@
+.student{
+  padding: 70px 80px;
+  &__title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #23283B;
+    margin-bottom: 92px;
+  }
+  &__subtitle{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23283B;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-align: center;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      background: #E6514A;
+      top: 8px;
+      left: 40%;
+    }
+  }
+  &__row{
+    display: flex;
+   justify-content: center;
+    column-gap: 185px;
+  }
+  &__card{
+    text-align: center;
+    &-title{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #23283B;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 20px 0 12px 0;
+    }
+    &-subtitle{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: #23283B;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin-bottom: 80px;
+    }
+  }
+  &__btn{
+    width: 365px;
+    height: 52px;
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #E6514A;
+    border-radius: 30px;
+    border: none;
+    margin-left: 403px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+      background-color: white;
+      color: #E6514A;
+      border: 1px solid #E6514A;
+      transition: .2s;
+    }
+  }
+}

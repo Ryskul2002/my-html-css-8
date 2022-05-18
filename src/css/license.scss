@@ -1,0 +1,63 @@
+.license{
+    padding-top: 140px;
+  &__card{
+    background-color: #3035C3;
+    box-shadow: 0 10px 40px rgba(73, 95, 211, 0.22);
+    border-radius: 20px;
+    padding: 100px 70px 100px 550px;
+    position: relative;
+  }
+  &__title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 25px;
+  }
+  &__subtitle{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-bottom: 32px;
+  }
+  &__btn{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 375px;
+    height: 52px;
+    background: #E6514A;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+     background-color: white;
+      color: #E6514A;
+      transition: .2s;
+    }
+  }
+  &__img{
+    position: absolute;
+    top: -42px;
+    left: 70px;
+  }
+}

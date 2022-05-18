@@ -1,0 +1,200 @@
+.review{
+  &__row{
+    display: flex;
+    column-gap: 60px;
+  }
+  &__title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #23283B;
+    margin-bottom: 52px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__item{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #3035C4;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    transition: 2s;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color: #E6514A;
+      transition: 3s;
+      left: 0;
+      bottom: -20px;
+    }
+    span{
+      display: none;
+      transition: 2s;
+      font-size: 0;
+      opacity: 0;
+    }
+    &_active{
+      color: #E6514A;
+      &::before{
+        width: 100%;
+        transition: 3s;
+      }
+      span{
+        display: inline;
+        transition: 2s;
+        font-size: 18px;
+        opacity: 100%;
+      }
+    }
+  }
+  &__card{
+    &-title{
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 130%;
+      color: #3035C4;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-bottom: 24px;
+    }
+    &-subtitle{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #23283B;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-bottom: 48px;
+    }
+  }
+  &__info{
+    &-title{
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 130%;
+      color: #23283B;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-bottom: 24px;
+    }
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+    &-item{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 150%;
+      color: #23283B;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      span{
+        font-family: Lato,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #23283B;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+    }
+    &-div{
+      display: flex;
+      flex-direction: column;
+    }
+    &-curses{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 150%;
+      color: #23283B;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 4px 0;
+    }
+    &-time{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #23283B;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 4px 0;
+      &_promise{
+        margin-top: 16px;
+      }
+    }
+  }
+  &__speak{
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+    &-item{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #23283B;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      border-bottom: 4px solid #E6514A;
+      span{
+        font-family: Lato,sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 150%;
+        color: #E6514A;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+      }
+    }
+  }
+}

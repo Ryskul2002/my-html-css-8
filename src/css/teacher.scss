@@ -1,0 +1,76 @@
+.teacher{
+  padding: 100px 0 0 0 ;
+  background-color: white;
+  &__row{
+    display: flex;
+    column-gap: 20px;
+  }
+  &__title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #23283B;
+    margin-bottom: 52px;
+  }
+  &__subtitle{
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23283B;
+    flex: none;
+    text-align: center;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background: #E6514A;
+      top: 7px;
+      left: 40%;
+    }
+  }
+  &__card{
+    &-img{
+      margin-bottom: 42px;
+      width: 375px;
+      height: 210px;
+      border-radius: 12px;
+    }
+    &-title{
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 130%;
+      text-align: center;
+      color: #3035C4;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-bottom: 32px;
+    }
+    &-subtitle{
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      text-align: center;
+      color: #23283B;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin-bottom: 102px;
+    }
+  }
+}
